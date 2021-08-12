@@ -48,7 +48,7 @@ You will find the binary under `./dist`
 ### TLDR
 
 ```
-docker run -it --rm -v $(pwd):/app python sh \
+docker run -it --rm -v $(pwd):/app python:3 sh \
   -c "pip3 install pyinstaller hiyapyco visitor; \
       pyinstaller --onefile --console --clean --strip /app/yaml2env.py"
 ```
